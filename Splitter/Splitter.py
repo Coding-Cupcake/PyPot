@@ -4,6 +4,7 @@ import pickle
 
 DIR = os.curdir
 FOLDS = 10
+LINE = "-----------------------------------"
 
 j = 1
 
@@ -17,10 +18,13 @@ for pickle_file in os.listdir(DIR):
                     if not os.path.exists("_" + pickle_file):
                                 os.makedirs("_" + pickle_file)
                     cv_list = pickle.load(p_file)
-                    print "Start processing..."
+                    print LINE
+                    print "Start processing for data set " + pickle_file
+                    print LINE
                     lib_svm = open("lib_" + pickle_file + "X", 'r')
                     lib_list = lib_svm.readlines()
                     while i <= FOLDS:
+                        print "------Create Fold " + str(i) + "------"
                         if not os.path.exists("_" + pickle_file + "/" + str(i)):
                                 os.makedirs("_" + pickle_file + "/" + str(i))
                         train_out = open("_" + pickle_file + "/" + str(i) + "/" + pickle_file + "train_" + str(i), 'w')
@@ -52,9 +56,11 @@ for pickle_file in os.listdir(DIR):
                             test_out.write(line)
 
                         i += 1
-
+                    print LINE
+                    print "Processed folds for " + pickle_file
+                    print LINE
                 j += 1
-
+print "Finished processing"
 print "ALL FILES: " + str(j-1)
 
 
