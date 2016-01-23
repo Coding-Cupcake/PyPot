@@ -17,7 +17,7 @@ for pickle_file in os.listdir(DIR):
                     if not os.path.exists("_" + pickle_file):
                                 os.makedirs("_" + pickle_file)
                     cv_list = pickle.load(p_file)
-                    print cv_list[0][1]
+                    print "Start processing..."
                     lib_svm = open("lib_" + pickle_file + "X", 'r')
                     lib_list = lib_svm.readlines()
                     while i <= FOLDS:
@@ -25,10 +25,36 @@ for pickle_file in os.listdir(DIR):
                                 os.makedirs("_" + pickle_file + "/" + str(i))
                         train_out = open("_" + pickle_file + "/" + str(i) + "/" + pickle_file + "train_" + str(i), 'w')
                         test_out = open("_" + pickle_file + "/" + str(i) + "/" + pickle_file + "test_" + str(i), 'w')
+
+                        train_array = []
+                        test_array = []
+
                         for train_elem in cv_list[i-1][0]:
-                            train_out.write(lib_list[train_elem])
+                            train_array.append(lib_list[train_elem])
                         for test_elem in cv_list[i-1][1]:
-                            test_out.write(lib_list[test_elem])
+                            test_array.append(lib_list[test_elem])
+
+                        for line in train_array:
+                            for other_line in train_array:
+                                if line[0] != other_line[0] and line[1:] == other_line[1:]:
+                                    train_array.remove(other_line)
+                                    print "Remove duplicate data point in training set: " + other_line
+
+                        for line in test_array:
+                            for other_line in test_array:
+                                if line[0] != other_line[0] and line[1:] == other_line[1:]:
+                                    test_array.remove(other_line)
+                                    print "Remove duplicate data point in testing set: " + other_line
+
+                        for line in train_array:
+                            train_out.write(line)
+                        for line in test_array:
+                            test_out.write(line)
+
                         i += 1
+
                 j += 1
+
 print "ALL FILES: " + str(j-1)
+
+
