@@ -1,0 +1,670 @@
+Error loading matplotlib; might cause error later
+WARNING: overriding input parameters in mondrianforest.py
+Setting normalize_features = 1 and alpha = 0 in mondrianforest.py
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Beginning mondrianforest.py
+Current settings:
+{'alpha': 0,
+ 'bagging': 0,
+ 'budget': -1.0,
+ 'data_path': '../process_data/1_60/',
+ 'dataset': '1',
+ 'debug': 0,
+ 'discount_factor': 10,
+ 'draw_mondrian': 0,
+ 'init_id': 1,
+ 'n_minibatches': 10,
+ 'n_mondrians': 100,
+ 'normalize_features': 1,
+ 'op_dir': 'results',
+ 'optype': 'class',
+ 'perf_dataset_keys': ['train', 'test'],
+ 'perf_metrics_keys': ['log_prob', 'acc'],
+ 'perf_store_keys': ['pred_prob'],
+ 'save': 1,
+ 'store_every': 1,
+ 'tag': '',
+ 'verbose': 1}
+
+Loading data ...
+npMinumumCountTrain = 7
+npMinumumCountTest = 7
+Loading data ... completed
+Dataset name = 1
+Characteristics of the dataset:
+n_train = 2625, n_test = 292, n_dim = 7
+n_class = 2
+
+Creating Mondrian forest
+************************************************************************************************************************
+idx_minibatch =     9
+
+Results on test data
+Averaging over all trees, accuracy = 0.780822
+printing test performance for every minibatch:
+idx_minibatch	metric_test	time_method	num_leaves
+         0	0.719		1.770		168.7
+         1	0.733		5.356		325.0
+         2	0.733		9.679		463.7
+         3	0.747		15.090		611.7
+         4	0.743		21.200		743.4
+         5	0.736		28.087		874.3
+         6	0.740		34.787		996.0
+         7	0.757		42.566		1130.1
+         8	0.757		49.967		1250.8
+         9	0.781		58.632		1372.0
+
+Final forest stats:
+mean(num_leaves) = 1372.0, mean(num_non_leaves) = 1371.0
+filename = results/1-mf-budg--1.0_nmon-100_mini-10_discount-10-param-0-init_id-1-bag-0-tag-.p
+
+Time for initializing Mondrian forest (seconds) = 0.007031
+Time for executing mondrianforest.py (seconds) = 58.624743
+Total time for executing mondrianforest.py, including init (seconds) = 58.631774
+Time for prediction/evaluation (seconds) = 114.719542
+Total time (Loading data/ initializing / running / predictions / saving) (seconds) = 173.352426
+
+Error loading matplotlib; might cause error later
+WARNING: overriding input parameters in mondrianforest.py
+Setting normalize_features = 1 and alpha = 0 in mondrianforest.py
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Beginning mondrianforest.py
+Current settings:
+{'alpha': 0,
+ 'bagging': 0,
+ 'budget': -1.0,
+ 'data_path': '../process_data/1_60/',
+ 'dataset': '2',
+ 'debug': 0,
+ 'discount_factor': 10,
+ 'draw_mondrian': 0,
+ 'init_id': 1,
+ 'n_minibatches': 10,
+ 'n_mondrians': 100,
+ 'normalize_features': 1,
+ 'op_dir': 'results',
+ 'optype': 'class',
+ 'perf_dataset_keys': ['train', 'test'],
+ 'perf_metrics_keys': ['log_prob', 'acc'],
+ 'perf_store_keys': ['pred_prob'],
+ 'save': 1,
+ 'store_every': 1,
+ 'tag': '',
+ 'verbose': 1}
+
+Loading data ...
+npMinumumCountTrain = 7
+npMinumumCountTest = 7
+Loading data ... completed
+Dataset name = 2
+Characteristics of the dataset:
+n_train = 2624, n_test = 292, n_dim = 7
+n_class = 2
+
+Creating Mondrian forest
+************************************************************************************************************************
+idx_minibatch =     9
+
+Results on test data
+Averaging over all trees, accuracy = 0.811644
+printing test performance for every minibatch:
+idx_minibatch	metric_test	time_method	num_leaves
+         0	0.726		1.839		172.4
+         1	0.774		5.451		317.4
+         2	0.764		10.143		470.4
+         3	0.774		15.278		609.4
+         4	0.774		21.432		751.6
+         5	0.801		28.329		892.2
+         6	0.788		35.106		1020.1
+         7	0.795		43.183		1161.1
+         8	0.805		50.934		1292.2
+         9	0.812		59.546		1402.3
+
+Final forest stats:
+mean(num_leaves) = 1402.3, mean(num_non_leaves) = 1401.3
+filename = results/2-mf-budg--1.0_nmon-100_mini-10_discount-10-param-0-init_id-1-bag-0-tag-.p
+
+Time for initializing Mondrian forest (seconds) = 0.007200
+Time for executing mondrianforest.py (seconds) = 59.538426
+Total time for executing mondrianforest.py, including init (seconds) = 59.545626
+Time for prediction/evaluation (seconds) = 115.154042
+Total time (Loading data/ initializing / running / predictions / saving) (seconds) = 174.700780
+
+Error loading matplotlib; might cause error later
+WARNING: overriding input parameters in mondrianforest.py
+Setting normalize_features = 1 and alpha = 0 in mondrianforest.py
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Beginning mondrianforest.py
+Current settings:
+{'alpha': 0,
+ 'bagging': 0,
+ 'budget': -1.0,
+ 'data_path': '../process_data/1_60/',
+ 'dataset': '3',
+ 'debug': 0,
+ 'discount_factor': 10,
+ 'draw_mondrian': 0,
+ 'init_id': 1,
+ 'n_minibatches': 10,
+ 'n_mondrians': 100,
+ 'normalize_features': 1,
+ 'op_dir': 'results',
+ 'optype': 'class',
+ 'perf_dataset_keys': ['train', 'test'],
+ 'perf_metrics_keys': ['log_prob', 'acc'],
+ 'perf_store_keys': ['pred_prob'],
+ 'save': 1,
+ 'store_every': 1,
+ 'tag': '',
+ 'verbose': 1}
+
+Loading data ...
+npMinumumCountTrain = 7
+npMinumumCountTest = 7
+Loading data ... completed
+Dataset name = 3
+Characteristics of the dataset:
+n_train = 2624, n_test = 292, n_dim = 7
+n_class = 2
+
+Creating Mondrian forest
+************************************************************************************************************************
+idx_minibatch =     9
+
+Results on test data
+Averaging over all trees, accuracy = 0.849315
+printing test performance for every minibatch:
+idx_minibatch	metric_test	time_method	num_leaves
+         0	0.767		1.837		172.1
+         1	0.805		5.482		316.8
+         2	0.829		10.237		475.0
+         3	0.846		15.439		620.6
+         4	0.836		21.760		766.8
+         5	0.832		28.713		904.1
+         6	0.853		35.727		1032.2
+         7	0.853		43.774		1163.5
+         8	0.842		51.521		1289.8
+         9	0.849		60.249		1406.4
+
+Final forest stats:
+mean(num_leaves) = 1406.4, mean(num_non_leaves) = 1405.4
+filename = results/3-mf-budg--1.0_nmon-100_mini-10_discount-10-param-0-init_id-1-bag-0-tag-.p
+
+Time for initializing Mondrian forest (seconds) = 0.007041
+Time for executing mondrianforest.py (seconds) = 60.242333
+Total time for executing mondrianforest.py, including init (seconds) = 60.249374
+Time for prediction/evaluation (seconds) = 117.799404
+Total time (Loading data/ initializing / running / predictions / saving) (seconds) = 178.049932
+
+Error loading matplotlib; might cause error later
+WARNING: overriding input parameters in mondrianforest.py
+Setting normalize_features = 1 and alpha = 0 in mondrianforest.py
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Beginning mondrianforest.py
+Current settings:
+{'alpha': 0,
+ 'bagging': 0,
+ 'budget': -1.0,
+ 'data_path': '../process_data/1_60/',
+ 'dataset': '4',
+ 'debug': 0,
+ 'discount_factor': 10,
+ 'draw_mondrian': 0,
+ 'init_id': 1,
+ 'n_minibatches': 10,
+ 'n_mondrians': 100,
+ 'normalize_features': 1,
+ 'op_dir': 'results',
+ 'optype': 'class',
+ 'perf_dataset_keys': ['train', 'test'],
+ 'perf_metrics_keys': ['log_prob', 'acc'],
+ 'perf_store_keys': ['pred_prob'],
+ 'save': 1,
+ 'store_every': 1,
+ 'tag': '',
+ 'verbose': 1}
+
+Loading data ...
+npMinumumCountTrain = 7
+npMinumumCountTest = 7
+Loading data ... completed
+Dataset name = 4
+Characteristics of the dataset:
+n_train = 2624, n_test = 292, n_dim = 7
+n_class = 2
+
+Creating Mondrian forest
+************************************************************************************************************************
+idx_minibatch =     9
+
+Results on test data
+Averaging over all trees, accuracy = 0.914384
+printing test performance for every minibatch:
+idx_minibatch	metric_test	time_method	num_leaves
+         0	0.784		1.867		176.1
+         1	0.812		5.489		317.7
+         2	0.849		10.214		473.0
+         3	0.849		15.444		624.4
+         4	0.853		21.754		764.4
+         5	0.877		28.694		902.0
+         6	0.880		35.665		1036.0
+         7	0.890		43.746		1178.1
+         8	0.908		51.593		1311.6
+         9	0.914		60.446		1434.6
+
+Final forest stats:
+mean(num_leaves) = 1434.6, mean(num_non_leaves) = 1433.6
+filename = results/4-mf-budg--1.0_nmon-100_mini-10_discount-10-param-0-init_id-1-bag-0-tag-.p
+
+Time for initializing Mondrian forest (seconds) = 0.007098
+Time for executing mondrianforest.py (seconds) = 60.438631
+Total time for executing mondrianforest.py, including init (seconds) = 60.445729
+Time for prediction/evaluation (seconds) = 122.986802
+Total time (Loading data/ initializing / running / predictions / saving) (seconds) = 183.433667
+
+Error loading matplotlib; might cause error later
+WARNING: overriding input parameters in mondrianforest.py
+Setting normalize_features = 1 and alpha = 0 in mondrianforest.py
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Beginning mondrianforest.py
+Current settings:
+{'alpha': 0,
+ 'bagging': 0,
+ 'budget': -1.0,
+ 'data_path': '../process_data/1_60/',
+ 'dataset': '5',
+ 'debug': 0,
+ 'discount_factor': 10,
+ 'draw_mondrian': 0,
+ 'init_id': 1,
+ 'n_minibatches': 10,
+ 'n_mondrians': 100,
+ 'normalize_features': 1,
+ 'op_dir': 'results',
+ 'optype': 'class',
+ 'perf_dataset_keys': ['train', 'test'],
+ 'perf_metrics_keys': ['log_prob', 'acc'],
+ 'perf_store_keys': ['pred_prob'],
+ 'save': 1,
+ 'store_every': 1,
+ 'tag': '',
+ 'verbose': 1}
+
+Loading data ...
+npMinumumCountTrain = 7
+npMinumumCountTest = 7
+Loading data ... completed
+Dataset name = 5
+Characteristics of the dataset:
+n_train = 2624, n_test = 292, n_dim = 7
+n_class = 2
+
+Creating Mondrian forest
+************************************************************************************************************************
+idx_minibatch =     9
+
+Results on test data
+Averaging over all trees, accuracy = 0.917808
+printing test performance for every minibatch:
+idx_minibatch	metric_test	time_method	num_leaves
+         0	0.753		1.858		174.7
+         1	0.805		5.523		320.7
+         2	0.825		10.346		473.8
+         3	0.836		15.555		618.8
+         4	0.849		21.937		763.0
+         5	0.877		28.944		893.6
+         6	0.884		35.964		1026.4
+         7	0.908		44.100		1172.8
+         8	0.908		52.080		1314.2
+         9	0.918		60.954		1439.0
+
+Final forest stats:
+mean(num_leaves) = 1439.0, mean(num_non_leaves) = 1438.0
+filename = results/5-mf-budg--1.0_nmon-100_mini-10_discount-10-param-0-init_id-1-bag-0-tag-.p
+
+Time for initializing Mondrian forest (seconds) = 0.007053
+Time for executing mondrianforest.py (seconds) = 60.946755
+Total time for executing mondrianforest.py, including init (seconds) = 60.953808
+Time for prediction/evaluation (seconds) = 121.462839
+Total time (Loading data/ initializing / running / predictions / saving) (seconds) = 182.417779
+
+Error loading matplotlib; might cause error later
+WARNING: overriding input parameters in mondrianforest.py
+Setting normalize_features = 1 and alpha = 0 in mondrianforest.py
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Beginning mondrianforest.py
+Current settings:
+{'alpha': 0,
+ 'bagging': 0,
+ 'budget': -1.0,
+ 'data_path': '../process_data/1_60/',
+ 'dataset': '6',
+ 'debug': 0,
+ 'discount_factor': 10,
+ 'draw_mondrian': 0,
+ 'init_id': 1,
+ 'n_minibatches': 10,
+ 'n_mondrians': 100,
+ 'normalize_features': 1,
+ 'op_dir': 'results',
+ 'optype': 'class',
+ 'perf_dataset_keys': ['train', 'test'],
+ 'perf_metrics_keys': ['log_prob', 'acc'],
+ 'perf_store_keys': ['pred_prob'],
+ 'save': 1,
+ 'store_every': 1,
+ 'tag': '',
+ 'verbose': 1}
+
+Loading data ...
+npMinumumCountTrain = 7
+npMinumumCountTest = 7
+Loading data ... completed
+Dataset name = 6
+Characteristics of the dataset:
+n_train = 2624, n_test = 292, n_dim = 7
+n_class = 2
+
+Creating Mondrian forest
+************************************************************************************************************************
+idx_minibatch =     9
+
+Results on test data
+Averaging over all trees, accuracy = 0.928082
+printing test performance for every minibatch:
+idx_minibatch	metric_test	time_method	num_leaves
+         0	0.702		1.859		173.9
+         1	0.736		5.435		317.6
+         2	0.798		10.128		467.9
+         3	0.829		15.241		612.8
+         4	0.846		21.535		752.6
+         5	0.870		28.354		881.1
+         6	0.877		35.200		1020.1
+         7	0.887		43.226		1166.8
+         8	0.911		51.088		1312.4
+         9	0.928		59.818		1436.7
+
+Final forest stats:
+mean(num_leaves) = 1436.7, mean(num_non_leaves) = 1435.7
+filename = results/6-mf-budg--1.0_nmon-100_mini-10_discount-10-param-0-init_id-1-bag-0-tag-.p
+
+Time for initializing Mondrian forest (seconds) = 0.007180
+Time for executing mondrianforest.py (seconds) = 59.810832
+Total time for executing mondrianforest.py, including init (seconds) = 59.818012
+Time for prediction/evaluation (seconds) = 122.872450
+Total time (Loading data/ initializing / running / predictions / saving) (seconds) = 182.691613
+
+Error loading matplotlib; might cause error later
+WARNING: overriding input parameters in mondrianforest.py
+Setting normalize_features = 1 and alpha = 0 in mondrianforest.py
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Beginning mondrianforest.py
+Current settings:
+{'alpha': 0,
+ 'bagging': 0,
+ 'budget': -1.0,
+ 'data_path': '../process_data/1_60/',
+ 'dataset': '7',
+ 'debug': 0,
+ 'discount_factor': 10,
+ 'draw_mondrian': 0,
+ 'init_id': 1,
+ 'n_minibatches': 10,
+ 'n_mondrians': 100,
+ 'normalize_features': 1,
+ 'op_dir': 'results',
+ 'optype': 'class',
+ 'perf_dataset_keys': ['train', 'test'],
+ 'perf_metrics_keys': ['log_prob', 'acc'],
+ 'perf_store_keys': ['pred_prob'],
+ 'save': 1,
+ 'store_every': 1,
+ 'tag': '',
+ 'verbose': 1}
+
+Loading data ...
+npMinumumCountTrain = 7
+npMinumumCountTest = 7
+Loading data ... completed
+Dataset name = 7
+Characteristics of the dataset:
+n_train = 2624, n_test = 292, n_dim = 7
+n_class = 2
+
+Creating Mondrian forest
+************************************************************************************************************************
+idx_minibatch =     9
+
+Results on test data
+Averaging over all trees, accuracy = 0.900685
+printing test performance for every minibatch:
+idx_minibatch	metric_test	time_method	num_leaves
+         0	0.771		1.837		173.2
+         1	0.791		5.536		325.1
+         2	0.829		10.354		478.2
+         3	0.849		15.592		624.8
+         4	0.842		22.000		762.7
+         5	0.873		28.959		893.7
+         6	0.873		35.948		1029.9
+         7	0.887		44.135		1178.0
+         8	0.894		51.992		1310.2
+         9	0.901		60.839		1433.6
+
+Final forest stats:
+mean(num_leaves) = 1433.6, mean(num_non_leaves) = 1432.6
+filename = results/7-mf-budg--1.0_nmon-100_mini-10_discount-10-param-0-init_id-1-bag-0-tag-.p
+
+Time for initializing Mondrian forest (seconds) = 0.007083
+Time for executing mondrianforest.py (seconds) = 60.832130
+Total time for executing mondrianforest.py, including init (seconds) = 60.839213
+Time for prediction/evaluation (seconds) = 121.633457
+Total time (Loading data/ initializing / running / predictions / saving) (seconds) = 182.473803
+
+Error loading matplotlib; might cause error later
+WARNING: overriding input parameters in mondrianforest.py
+Setting normalize_features = 1 and alpha = 0 in mondrianforest.py
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Beginning mondrianforest.py
+Current settings:
+{'alpha': 0,
+ 'bagging': 0,
+ 'budget': -1.0,
+ 'data_path': '../process_data/1_60/',
+ 'dataset': '8',
+ 'debug': 0,
+ 'discount_factor': 10,
+ 'draw_mondrian': 0,
+ 'init_id': 1,
+ 'n_minibatches': 10,
+ 'n_mondrians': 100,
+ 'normalize_features': 1,
+ 'op_dir': 'results',
+ 'optype': 'class',
+ 'perf_dataset_keys': ['train', 'test'],
+ 'perf_metrics_keys': ['log_prob', 'acc'],
+ 'perf_store_keys': ['pred_prob'],
+ 'save': 1,
+ 'store_every': 1,
+ 'tag': '',
+ 'verbose': 1}
+
+Loading data ...
+npMinumumCountTrain = 7
+npMinumumCountTest = 7
+Loading data ... completed
+Dataset name = 8
+Characteristics of the dataset:
+n_train = 2625, n_test = 291, n_dim = 7
+n_class = 2
+
+Creating Mondrian forest
+************************************************************************************************************************
+idx_minibatch =     9
+
+Results on test data
+Averaging over all trees, accuracy = 0.910653
+printing test performance for every minibatch:
+idx_minibatch	metric_test	time_method	num_leaves
+         0	0.639		1.800		169.7
+         1	0.729		5.559		335.0
+         2	0.746		10.339		485.4
+         3	0.801		15.568		624.7
+         4	0.828		21.985		770.1
+         5	0.869		29.107		914.9
+         6	0.869		36.080		1055.8
+         7	0.893		44.057		1183.9
+         8	0.918		51.689		1299.2
+         9	0.911		60.590		1423.6
+
+Final forest stats:
+mean(num_leaves) = 1423.6, mean(num_non_leaves) = 1422.6
+filename = results/8-mf-budg--1.0_nmon-100_mini-10_discount-10-param-0-init_id-1-bag-0-tag-.p
+
+Time for initializing Mondrian forest (seconds) = 0.007047
+Time for executing mondrianforest.py (seconds) = 60.582592
+Total time for executing mondrianforest.py, including init (seconds) = 60.589639
+Time for prediction/evaluation (seconds) = 124.662895
+Total time (Loading data/ initializing / running / predictions / saving) (seconds) = 185.253650
+
+Error loading matplotlib; might cause error later
+WARNING: overriding input parameters in mondrianforest.py
+Setting normalize_features = 1 and alpha = 0 in mondrianforest.py
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Beginning mondrianforest.py
+Current settings:
+{'alpha': 0,
+ 'bagging': 0,
+ 'budget': -1.0,
+ 'data_path': '../process_data/1_60/',
+ 'dataset': '9',
+ 'debug': 0,
+ 'discount_factor': 10,
+ 'draw_mondrian': 0,
+ 'init_id': 1,
+ 'n_minibatches': 10,
+ 'n_mondrians': 100,
+ 'normalize_features': 1,
+ 'op_dir': 'results',
+ 'optype': 'class',
+ 'perf_dataset_keys': ['train', 'test'],
+ 'perf_metrics_keys': ['log_prob', 'acc'],
+ 'perf_store_keys': ['pred_prob'],
+ 'save': 1,
+ 'store_every': 1,
+ 'tag': '',
+ 'verbose': 1}
+
+Loading data ...
+npMinumumCountTrain = 7
+npMinumumCountTest = 7
+Loading data ... completed
+Dataset name = 9
+Characteristics of the dataset:
+n_train = 2626, n_test = 291, n_dim = 7
+n_class = 2
+
+Creating Mondrian forest
+************************************************************************************************************************
+idx_minibatch =     9
+
+Results on test data
+Averaging over all trees, accuracy = 0.738832
+printing test performance for every minibatch:
+idx_minibatch	metric_test	time_method	num_leaves
+         0	0.680		1.729		163.1
+         1	0.704		5.495		336.5
+         2	0.660		10.300		484.7
+         3	0.694		15.463		610.1
+         4	0.698		21.695		741.6
+         5	0.715		28.364		867.3
+         6	0.729		35.226		1005.6
+         7	0.729		43.123		1131.0
+         8	0.729		50.618		1249.2
+         9	0.739		59.352		1379.7
+
+Final forest stats:
+mean(num_leaves) = 1379.7, mean(num_non_leaves) = 1378.7
+filename = results/9-mf-budg--1.0_nmon-100_mini-10_discount-10-param-0-init_id-1-bag-0-tag-.p
+
+Time for initializing Mondrian forest (seconds) = 0.006923
+Time for executing mondrianforest.py (seconds) = 59.344964
+Total time for executing mondrianforest.py, including init (seconds) = 59.351887
+Time for prediction/evaluation (seconds) = 121.083675
+Total time (Loading data/ initializing / running / predictions / saving) (seconds) = 180.436767
+
+Error loading matplotlib; might cause error later
+WARNING: overriding input parameters in mondrianforest.py
+Setting normalize_features = 1 and alpha = 0 in mondrianforest.py
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Beginning mondrianforest.py
+Current settings:
+{'alpha': 0,
+ 'bagging': 0,
+ 'budget': -1.0,
+ 'data_path': '../process_data/1_60/',
+ 'dataset': '10',
+ 'debug': 0,
+ 'discount_factor': 10,
+ 'draw_mondrian': 0,
+ 'init_id': 1,
+ 'n_minibatches': 10,
+ 'n_mondrians': 100,
+ 'normalize_features': 1,
+ 'op_dir': 'results',
+ 'optype': 'class',
+ 'perf_dataset_keys': ['train', 'test'],
+ 'perf_metrics_keys': ['log_prob', 'acc'],
+ 'perf_store_keys': ['pred_prob'],
+ 'save': 1,
+ 'store_every': 1,
+ 'tag': '',
+ 'verbose': 1}
+
+Loading data ...
+npMinumumCountTrain = 7
+npMinumumCountTest = 7
+Loading data ... completed
+Dataset name = 10
+Characteristics of the dataset:
+n_train = 2625, n_test = 291, n_dim = 7
+n_class = 2
+
+Creating Mondrian forest
+************************************************************************************************************************
+idx_minibatch =     9
+
+Results on test data
+Averaging over all trees, accuracy = 0.690722
+printing test performance for every minibatch:
+idx_minibatch	metric_test	time_method	num_leaves
+         0	0.612		1.791		168.8
+         1	0.653		5.568		337.4
+         2	0.674		10.348		485.4
+         3	0.687		15.498		613.4
+         4	0.708		21.677		753.2
+         5	0.698		28.517		883.3
+         6	0.680		35.311		1020.4
+         7	0.674		42.945		1134.4
+         8	0.684		50.276		1238.6
+         9	0.691		58.061		1352.6
+
+Final forest stats:
+mean(num_leaves) = 1352.6, mean(num_non_leaves) = 1351.6
+filename = results/10-mf-budg--1.0_nmon-100_mini-10_discount-10-param-0-init_id-1-bag-0-tag-.p
+
+Time for initializing Mondrian forest (seconds) = 0.007197
+Time for executing mondrianforest.py (seconds) = 58.053640
+Total time for executing mondrianforest.py, including init (seconds) = 58.060837
+Time for prediction/evaluation (seconds) = 123.397401
+Total time (Loading data/ initializing / running / predictions / saving) (seconds) = 181.459363
+

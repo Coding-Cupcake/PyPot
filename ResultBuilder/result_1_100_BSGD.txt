@@ -1,0 +1,287 @@
+
+*** Training started with the following parameters:
+Algorithm 			: BSGD
+Number of epochs 		: 5
+Maintenance strategy 		: 1 (merging)
+Number of epochs 		: 5
+Size of the budget 		: 500
+Lambda regularization param. 	: 0.000100
+Gaussian kernel used 		: K(x, y) = exp(-0.5 * gamma * ||x - y||^2)
+Kernel width gamma 		: 0.010000
+
+Number of examples processed: 7993
+Epoch 1/5 done.
+Number of examples processed: 15986
+Epoch 2/5 done.
+Number of examples processed: 23979
+Epoch 3/5 done.
+Number of examples processed: 31972
+Epoch 4/5 done.
+Number of examples processed: 39965
+Epoch 5/5 done.
+
+Training completed in 97.875 seconds.
+
+Number of budget maintenance steps: 37965
+
+*** Training started with the following parameters:
+Algorithm 			: BSGD
+Number of epochs 		: 5
+Maintenance strategy 		: 1 (merging)
+Number of epochs 		: 5
+Size of the budget 		: 500
+Lambda regularization param. 	: 0.000100
+Gaussian kernel used 		: K(x, y) = exp(-0.5 * gamma * ||x - y||^2)
+Kernel width gamma 		: 0.010000
+
+Number of examples processed: 7993
+Epoch 1/5 done.
+Number of examples processed: 15986
+Epoch 2/5 done.
+Number of examples processed: 23979
+Epoch 3/5 done.
+Number of examples processed: 31972
+Epoch 4/5 done.
+Number of examples processed: 39965
+Epoch 5/5 done.
+
+Training completed in 97.089 seconds.
+
+Number of budget maintenance steps: 37949
+
+*** Training started with the following parameters:
+Algorithm 			: BSGD
+Number of epochs 		: 5
+Maintenance strategy 		: 1 (merging)
+Number of epochs 		: 5
+Size of the budget 		: 500
+Lambda regularization param. 	: 0.000100
+Gaussian kernel used 		: K(x, y) = exp(-0.5 * gamma * ||x - y||^2)
+Kernel width gamma 		: 0.010000
+
+Number of examples processed: 7993
+Epoch 1/5 done.
+Number of examples processed: 15986
+Epoch 2/5 done.
+Number of examples processed: 23979
+Epoch 3/5 done.
+Number of examples processed: 31972
+Epoch 4/5 done.
+Number of examples processed: 39965
+Epoch 5/5 done.
+
+Training completed in 95.721 seconds.
+
+Number of budget maintenance steps: 37980
+
+*** Training started with the following parameters:
+Algorithm 			: BSGD
+Number of epochs 		: 5
+Maintenance strategy 		: 1 (merging)
+Number of epochs 		: 5
+Size of the budget 		: 500
+Lambda regularization param. 	: 0.000100
+Gaussian kernel used 		: K(x, y) = exp(-0.5 * gamma * ||x - y||^2)
+Kernel width gamma 		: 0.010000
+
+Number of examples processed: 7993
+Epoch 1/5 done.
+Number of examples processed: 15986
+Epoch 2/5 done.
+Number of examples processed: 23979
+Epoch 3/5 done.
+Number of examples processed: 31972
+Epoch 4/5 done.
+Number of examples processed: 39965
+Epoch 5/5 done.
+
+Training completed in 97.794 seconds.
+
+Number of budget maintenance steps: 38005
+
+*** Training started with the following parameters:
+Algorithm 			: BSGD
+Number of epochs 		: 5
+Maintenance strategy 		: 1 (merging)
+Number of epochs 		: 5
+Size of the budget 		: 500
+Lambda regularization param. 	: 0.000100
+Gaussian kernel used 		: K(x, y) = exp(-0.5 * gamma * ||x - y||^2)
+Kernel width gamma 		: 0.010000
+
+Number of examples processed: 7993
+Epoch 1/5 done.
+Number of examples processed: 15986
+Epoch 2/5 done.
+Number of examples processed: 23979
+Epoch 3/5 done.
+Number of examples processed: 31972
+Epoch 4/5 done.
+Number of examples processed: 39965
+Epoch 5/5 done.
+
+Training completed in 40.616 seconds.
+
+Number of budget maintenance steps: 10319
+
+*** Training started with the following parameters:
+Algorithm 			: BSGD
+Number of epochs 		: 5
+Maintenance strategy 		: 1 (merging)
+Number of epochs 		: 5
+Size of the budget 		: 500
+Lambda regularization param. 	: 0.000100
+Gaussian kernel used 		: K(x, y) = exp(-0.5 * gamma * ||x - y||^2)
+Kernel width gamma 		: 0.010000
+
+Number of examples processed: 7994
+Epoch 1/5 done.
+Number of examples processed: 15988
+Epoch 2/5 done.
+Number of examples processed: 23982
+Epoch 3/5 done.
+Number of examples processed: 31976
+Epoch 4/5 done.
+Number of examples processed: 39970
+Epoch 5/5 done.
+
+Training completed in 97.556 seconds.
+
+Number of budget maintenance steps: 38112
+
+*** Training started with the following parameters:
+Algorithm 			: BSGD
+Number of epochs 		: 5
+Maintenance strategy 		: 1 (merging)
+Number of epochs 		: 5
+Size of the budget 		: 500
+Lambda regularization param. 	: 0.000100
+Gaussian kernel used 		: K(x, y) = exp(-0.5 * gamma * ||x - y||^2)
+Kernel width gamma 		: 0.010000
+
+Number of examples processed: 7994
+Epoch 1/5 done.
+Number of examples processed: 15988
+Epoch 2/5 done.
+Number of examples processed: 23982
+Epoch 3/5 done.
+Number of examples processed: 31976
+Epoch 4/5 done.
+Number of examples processed: 39970
+Epoch 5/5 done.
+
+Training completed in 97.316 seconds.
+
+Number of budget maintenance steps: 37985
+
+*** Training started with the following parameters:
+Algorithm 			: BSGD
+Number of epochs 		: 5
+Maintenance strategy 		: 1 (merging)
+Number of epochs 		: 5
+Size of the budget 		: 500
+Lambda regularization param. 	: 0.000100
+Gaussian kernel used 		: K(x, y) = exp(-0.5 * gamma * ||x - y||^2)
+Kernel width gamma 		: 0.010000
+
+Number of examples processed: 7995
+Epoch 1/5 done.
+Number of examples processed: 15990
+Epoch 2/5 done.
+Number of examples processed: 23985
+Epoch 3/5 done.
+Number of examples processed: 31980
+Epoch 4/5 done.
+Number of examples processed: 39975
+Epoch 5/5 done.
+
+Training completed in 97.378 seconds.
+
+Number of budget maintenance steps: 38068
+
+*** Training started with the following parameters:
+Algorithm 			: BSGD
+Number of epochs 		: 5
+Maintenance strategy 		: 1 (merging)
+Number of epochs 		: 5
+Size of the budget 		: 500
+Lambda regularization param. 	: 0.000100
+Gaussian kernel used 		: K(x, y) = exp(-0.5 * gamma * ||x - y||^2)
+Kernel width gamma 		: 0.010000
+
+Number of examples processed: 7995
+Epoch 1/5 done.
+Number of examples processed: 15990
+Epoch 2/5 done.
+Number of examples processed: 23985
+Epoch 3/5 done.
+Number of examples processed: 31980
+Epoch 4/5 done.
+Number of examples processed: 39975
+Epoch 5/5 done.
+
+Training completed in 97.349 seconds.
+
+Number of budget maintenance steps: 38047
+
+*** Training started with the following parameters:
+Algorithm 			: BSGD
+Number of epochs 		: 5
+Maintenance strategy 		: 1 (merging)
+Number of epochs 		: 5
+Size of the budget 		: 500
+Lambda regularization param. 	: 0.000100
+Gaussian kernel used 		: K(x, y) = exp(-0.5 * gamma * ||x - y||^2)
+Kernel width gamma 		: 0.010000
+
+Number of examples processed: 7995
+Epoch 1/5 done.
+Number of examples processed: 15990
+Epoch 2/5 done.
+Number of examples processed: 23985
+Epoch 3/5 done.
+Number of examples processed: 31980
+Epoch 4/5 done.
+Number of examples processed: 39975
+Epoch 5/5 done.
+
+Training completed in 97.758 seconds.
+
+Number of budget maintenance steps: 37995
+
+Number of examples processed: 889
+*** Testing completed in 0.218 seconds
+*** Testing error rate: 44.99 percent
+
+Number of examples processed: 889
+*** Testing completed in 0.217 seconds
+*** Testing error rate: 44.99 percent
+
+Number of examples processed: 889
+*** Testing completed in 0.222 seconds
+*** Testing error rate: 44.99 percent
+
+Number of examples processed: 889
+*** Testing completed in 0.220 seconds
+*** Testing error rate: 44.99 percent
+
+Number of examples processed: 889
+*** Testing completed in 0.216 seconds
+*** Testing error rate: 44.99 percent
+
+Number of examples processed: 888
+*** Testing completed in 0.224 seconds
+*** Testing error rate: 44.93 percent
+
+Number of examples processed: 888
+*** Testing completed in 0.226 seconds
+*** Testing error rate: 44.93 percent
+
+Number of examples processed: 887
+*** Testing completed in 0.220 seconds
+*** Testing error rate: 44.98 percent
+
+Number of examples processed: 887
+*** Testing completed in 0.218 seconds
+*** Testing error rate: 44.98 percent
+
