@@ -7,6 +7,8 @@ for sorted_filed in os.listdir(HOME):
         sorted_input = open(HOME + "/" + sorted_filed, 'r')
         sorted_array = sorted_input.readlines()
         for folder in os.listdir(HOME):
+
+            print "Start processing: " + folder
             folder_dir = HOME + "/" + folder
             if os.path.isdir(folder_dir) and sorted_filed.__contains__(folder):
                 for sub_folder in os.listdir(folder_dir):
@@ -25,8 +27,11 @@ for sorted_filed in os.listdir(HOME):
                                             t_array_ts.append(line)
                                             break
 
-                                result_file = open(sub_folder_dir + "/" + test_file + "_sorted", 'w')
+                                result_file = open(sub_folder_dir + "/" + test_file, 'w')
                                 t_array_ts.sort()
+
+                                print "Processing file: " + test_file
+
                                 for line in t_array_ts:
                                     result_file.write(line.split('|')[1].lstrip())
 
