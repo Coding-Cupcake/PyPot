@@ -1,21 +1,21 @@
 import os
 
 HOME = os.curdir
+LINE = "-------------------------------"
 
 for sorted_filed in os.listdir(HOME):
     if not sorted_filed.endswith(".py") and not os.path.isdir(HOME + "/" + sorted_filed):
         sorted_input = open(HOME + "/" + sorted_filed, 'r')
         sorted_array = sorted_input.readlines()
         for folder in os.listdir(HOME):
-
-            print "Start processing: " + folder
             folder_dir = HOME + "/" + folder
             if os.path.isdir(folder_dir) and sorted_filed.__contains__(folder):
+                print LINE + "\n" + "Start processing: " + folder + "\n" + LINE + "\n"
                 for sub_folder in os.listdir(folder_dir):
                     sub_folder_dir = folder_dir + "/" + sub_folder
                     if os.path.isdir(sub_folder_dir):
                         for test_file in os.listdir(sub_folder_dir):
-                            if test_file.__contains__("test"):
+                            if test_file.__contains__("train"):
                                 t_file = open(sub_folder_dir + "/" + test_file, 'r')
                                 t_array = t_file.readlines()
 
