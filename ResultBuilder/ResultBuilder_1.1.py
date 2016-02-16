@@ -23,20 +23,22 @@ time_prediction = []
 # For Mondrian Forest
 if algorithm == '0':
     for line in input_stats:
-        i = 0
-        while i < len(line.split()):
-                if line.split()[i].lstrip()[0].isdigit():
-                    if i == 0:
-                        accuracy.append(line.split()[2])
-                elif line.split()[i].__eq__("executing"):
-                    for other in line.split():
-                            if other[0].isdigit():
-                                time_execution.append(other)
-                elif line.split()[i].__eq__("prediction/evaluation"):
-                    for number in line.split():
-                        if number[0].isdigit():
-                            time_prediction.append(number)
-                i += 1
+        for word in line.split():
+            if word.__eq__("accuracy"):
+                for number in line.split():
+                    if number[0].isdigit():
+                        accuracy.append(number)
+            elif word.__eq__("executing"):
+                for other in line.split():
+                    if other.__eq__("Time"):
+                        for number in line.split():
+                            if number[0].isdigit():
+                                time_execution.append(number)
+            elif word.__eq__("prediction/evaluation"):
+                for number in line.split():
+                    if number[0].isdigit():
+                        time_prediction.append(number)
+
 
 # For Budgeted Stochastic Gradient Descent
 if algorithm == '1':
