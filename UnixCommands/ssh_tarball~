@@ -1,0 +1,7 @@
+Variant 1
+
+ssh weissp@guatteri.informatik.uni-freiburg.de 'tar -cf - /net/leeds/snsa-data/splitcascades/olympics-analysis/recrawled-2014-01-17/jsons/merged-json-results' | gzip > remote_files.tgz
+
+Variant 2
+
+

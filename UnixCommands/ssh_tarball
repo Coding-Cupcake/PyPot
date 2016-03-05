@@ -1,0 +1,9 @@
+Variant 1
+
+ssh username@hostname 'tar -cf - /dir/to/download' | gzip > remote_files.tgz
+
+Variant 2
+
+scp -r username@yourserver.com:/path/to/remote/files /path/to/local/files
+
+
