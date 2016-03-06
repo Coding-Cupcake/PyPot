@@ -20,11 +20,14 @@ for cascade in os.listdir(args.cascades_folder):
 
     while index < len(words):
 
+        # Check for the timestamp of the original message
         if words[index].__contains__("created_at"):
-            if words[index][13:].__contains__("\""):
+
+            if words[index][13:].__contains__("\""):  # Format: Fri Aug 03 15:10:58 +0000 2012
                 ts_array.append(datetime.datetime.fromtimestamp(toTimestamp(words[index][14:-1])).strftime('%d-%m-%Y'))
-            else:
-                ts_array.append(datetime.datetime.fromtimestamp(int(words[index][13:23])).strftime('%d-%m-%Y'))
+
+            else:  # Format: 1344006622000
+                ts_array.append(datetime.datetime.fromtimestamp(int(words[index][13:-1])/100).strftime('%d-%m-%Y'))
             break
         else:
             index += 1
