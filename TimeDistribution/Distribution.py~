@@ -2,8 +2,6 @@ import os
 import argparse
 import datetime
 
-# This is for time distribution analysis of data points
-
 # Parse command line arguments
 parser = argparse.ArgumentParser()
 parser.add_argument("ts_file", help="Please specify file containing time stamps for data points")
