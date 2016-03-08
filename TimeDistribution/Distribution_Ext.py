@@ -1,9 +1,9 @@
 import os
 import argparse
 import datetime
+import numpy as np
+import matplotlib.pyplot as plt
 from Utils import toTimestamp
-
-# This is for time distribution analysis of cascades
 
 # Parse command line arguments
 parser = argparse.ArgumentParser()
@@ -34,6 +34,12 @@ for cascade in os.listdir(args.cascades_folder):
         else:
             index += 1
 
+# Cut for plotting
+ts_array_cut = []
+
+for date in ts_array:
+    ts_array_cut.append(date[0:5])
+
 # Work with set
 ts_set = set(ts_array)
 out_sorted = []
@@ -41,7 +47,31 @@ out_sorted = []
 for line in ts_set:
     n = ts_array.count(line)
     out_sorted.append(line + "," + str((n/float(len(ts_array)))*100) + "," + str(n))
-out_sorted.sort(key = lambda x: x.split(',')[1], reverse=True)
+out_sorted.sort(key = lambda x: x.split(',')[0], reverse=False)
+
+# Convert timestamp array to dictionary
+timestamps = dict((x, ts_array_cut.count(x)) for x in ts_array_cut)
+
+# Get the heights and labels from the dictionary
+heights, labels = [], []
+for key, val in timestamps.iteritems():
+    labels.append(key)
+    heights.append(val)
+
+# Create a set of fake indexes at which to place the bars
+indexes = np.arange(len(timestamps))
+width = 0.4
+
+# Generate a matplotlib figure and plot the bar chart
+fig, ax = plt.subplots()
+ax.bar(indexes, heights)
+
+# Overwrite the axis labels
+ax.set_xticks(indexes + width)
+ax.set_xticklabels(labels, rotation='vertical')
+
+# Plot chart
+plt.show()
 
 # Print out_sorted
 for line in out_sorted:
