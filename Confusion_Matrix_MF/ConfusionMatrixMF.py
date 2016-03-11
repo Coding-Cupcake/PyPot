@@ -1,10 +1,16 @@
 import pickle
 import os
+import argparse
 
 # Input data path
 INPUT = os.curdir + "/data/"
 LINE = "-----------------------------"
 
+
+# Parse command line arguments
+parser = argparse.ArgumentParser()
+parser.add_argument("buckets", help="Enter number of buckets the test has been performed with")
+args = parser.parse_args()
 
 # Extract number
 def extract_number(pickle_file):
@@ -40,6 +46,14 @@ for folder in os.listdir(INPUT):
     false_positive = 0
     false_negative= 0
 
+    true_positive_old = 0
+    true_negative_old = 0
+    false_positive_old = 0
+    false_negative_old = 0
+
+
+    buckets = int(args.buckets)
+
     if os.path.isdir(INPUT + folder):
         cur_dir = INPUT + folder + "/"
         for p_file in os.listdir(cur_dir):
@@ -51,7 +65,10 @@ for folder in os.listdir(INPUT):
                     if test_file.endswith(number):
                         pred_values, act_values = list_builder(cur_dir + p_file, cur_dir + test_file)
                         break
-                i = 0
+
+                i, k = 0, 0
+                j = 1
+
                 while i < len(pred_values):
                     if pred_values[i] == str(1) and act_values[i] == str(1):
                         true_positive += 1
@@ -61,10 +78,28 @@ for folder in os.listdir(INPUT):
                         false_negative += 1
                     elif pred_values[i] == str(1) and act_values[i] == str(0):
                         false_positive += 1
+
+                    if j == len(pred_values)/buckets:
+                        print LINE
+                        print "Dataset: " + str(folder) + " --- " + "Bucket: " + str(k)
+                        print LINE
+                        print "True Positive: " + str(true_positive - true_positive_old)
+                        print "True Negative: " + str(true_negative - true_negative_old)
+                        print "False Positive: " + str(false_positive - false_positive_old)
+                        print "False Negative: " + str(false_negative -false_negative_old)
+                        k += 1
+                        j = 0
+
+                        true_positive_old = true_positive
+                        true_negative_old = true_negative
+                        false_positive_old = false_positive
+                        false_negative_old = false_negative
+
                     i += 1
+                    j += 1
 
         print LINE
-        print "Dataset: " + str(folder)
+        print "Dataset: " + str(folder) + " --- " + "Summary"
         print LINE
         print "True Positive: " + str(true_positive)
         print "True Negative: " + str(true_negative)
