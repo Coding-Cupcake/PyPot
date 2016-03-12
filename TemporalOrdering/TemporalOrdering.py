@@ -1,6 +1,11 @@
 import os
 import calendar
 import time
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument("file", help="Enter the name of the libsvm training file")
+args = parser.parse_args()
 
 def toTimestamp(sTimestamp):
     """
@@ -16,7 +21,8 @@ def toTimestamp(sTimestamp):
     return lTimestamp
 
 for in_file in os.listdir(os.curdir):
-    if not in_file.endswith("lib") and not os.path.isdir(os.curdir + "/" + in_file):
+
+    if not in_file.endswith(args.file) and not in_file.endswith(".py") and not os.path.isdir(os.curdir + "/" + in_file):
         input_file = open(in_file, 'r')
         in_data = input_file.read().split("\n")
 
@@ -37,7 +43,7 @@ for in_file in os.listdir(os.curdir):
             out_array.append(str(in_array[i]))
             i += 1
 
-        lib = open("lib", 'r')
+        lib = open(args.file, 'r')
         lib_content = lib.readlines()
         result = []
         j = 0
@@ -55,7 +61,7 @@ for in_file in os.listdir(os.curdir):
         for line in final_arr:
             final_out.append(line.split('|')[1].lstrip())
 
-        final_sorted = open("out_sorted", 'w')
+        final_sorted = open(args.file + "_sorted", 'w')
         for line in final_out:
             final_sorted.write(line)
 
