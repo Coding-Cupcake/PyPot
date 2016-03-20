@@ -2,44 +2,61 @@ import os
 
 WINDOW = 0.2
 SLICE = 0.1
+BUCKETS = 10
 
-for f_ile in os.listdir(os.curdir):
+for test_file in os.listdir(os.curdir):
 
-    if f_ile.__contains__("test") or f_ile.__contains__("train"):
-        in_file = open(os.curdir + "/" + f_ile, 'r')
-        in_array = in_file.readlines()
+    if test_file.__contains__("test"):
 
-        outer_dir = os.curdir + "/" + f_ile[0:5]
+        for train_file in os.listdir(os.curdir):
 
-        if not os.path.exists(outer_dir):
-                os.makedirs(outer_dir)
+            if train_file.__contains__("train"):
 
-        num_records = len(in_array)
-        window_size = int(num_records*WINDOW)
-        slice_size = int(num_records*SLICE)
+                in_file_test = open(os.curdir + "/" + test_file, 'r')
+                in_file_train = open(os.curdir + "/" + train_file, 'r')
 
-        start = 0
-        stop = window_size
+                in_array_test = in_file_test.readlines()
+                in_array_train = in_file_train.readlines()
 
-        index = 1
+                outer_dir = os.curdir + "/" + test_file[0:5]
 
-        while index < 10:
+                if not os.path.exists(outer_dir):
+                        os.makedirs(outer_dir)
 
-            print "START " + str(start)
-            print "STOP " + str(stop)
+                bucket_size_test = len(in_array_test)/BUCKETS
+                num_records_train = len(in_array_train)
+                window_size = int(num_records_train*WINDOW)
+                slice_size = int(num_records_train*SLICE)
 
-            slice = in_array[start:stop]
+                start = 0
+                stop = window_size
 
-            target_dir = outer_dir + "/" + str(index)
+                index = 1
 
-            if not os.path.exists(target_dir):
-                os.makedirs(target_dir)
+                while index < 10:
 
-            out_file = open(target_dir + "/" + f_ile + "_" + str(index), 'w')
+                    print "START " + str(start)
+                    print "STOP " + str(stop)
 
-            for line in slice:
-                out_file.write(line)
+                    slice = in_array_train[start:stop]
 
-            start += slice_size
-            stop += slice_size
-            index += 1
+                    start_test = index * bucket_size_test
+                    test_bucket = in_array_test[start_test:start_test + bucket_size_test]
+
+                    target_dir = outer_dir + "/" + str(index)
+
+                    if not os.path.exists(target_dir):
+                        os.makedirs(target_dir)
+
+                    out_train = open(target_dir + "/" + train_file + "_" + str(index), 'w')
+                    out_test = open(target_dir + "/" + test_file + "_" + str(index), 'w')
+
+                    for line in slice:
+                        out_train.write(line)
+
+                    for other_line in test_bucket:
+                        out_test.write(other_line)
+
+                    start += slice_size
+                    stop += slice_size
+                    index += 1
