@@ -22,9 +22,11 @@ def toTimestamp(sTimestamp):
 
 for in_file in os.listdir(os.curdir):
 
-    if not in_file.endswith(args.file) and not in_file.endswith(".py") and not os.path.isdir(os.curdir + "/" + in_file):
+    if not in_file.endswith(args.file) and not in_file.endswith(".py") and not os.path.isdir(os.curdir + "/" + in_file) and not in_file.__contains__("~"):
         input_file = open(in_file, 'r')
         in_data = input_file.read().split("\n")
+
+        print "Processing Data ..."
 
         in_array = []
         for line in in_data:
@@ -35,7 +37,7 @@ for in_file in os.listdir(os.curdir):
                     converted_ts = toTimestamp(line)
                     in_array.append(converted_ts)
 
-        print len(in_array)
+
         outfile = open("out", 'w')
         out_array = []
         i = 0
@@ -65,4 +67,3 @@ for in_file in os.listdir(os.curdir):
         for line in final_out:
             final_sorted.write(line)
 
-        print final_arr
