@@ -81,12 +81,13 @@ for folder in os.listdir(INPUT):
 
                     if j == len(pred_values)/buckets:
                         print LINE
-                        print "Dataset: " + str(folder) + " --- " + "Bucket: " + str(k)
+                        print "Dataset: " + str(folder) + " --- " + "Bucket: " + str(k) + "File No. : " + p_file[0]
                         print LINE
                         print "True Positive: " + str(true_positive - true_positive_old)
                         print "True Negative: " + str(true_negative - true_negative_old)
                         print "False Positive: " + str(false_positive - false_positive_old)
                         print "False Negative: " + str(false_negative -false_negative_old)
+			print "Accuracy: " + str(float(true_positive - true_positive_old + true_negative - true_negative_old) / float((true_positive - true_positive_old + false_positive - 				false_positive_old + true_negative - true_negative_old + false_negative -false_negative_old)))
                         k += 1
                         j = 0
 
@@ -105,3 +106,5 @@ for folder in os.listdir(INPUT):
         print "True Negative: " + str(true_negative)
         print "False Positive: " + str(false_positive)
         print "False Negative: " + str(false_negative)
+	print "Accuracy: " + str(float(true_positive + true_negative) / (true_positive + false_positive + true_negative + false_negative))
+
