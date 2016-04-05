@@ -1,14 +1,20 @@
 import os
 import datetime
+import argparse
 
-# To use if there is a TS file (currently for the 1_60 data sets)
+# Parse command line arguments
+parser = argparse.ArgumentParser()
+parser.add_argument("ts_file", help="Enter name of time stamp file (e.g. 1_60_TS)")
+args = parser.parse_args()
+
+# To use if there is a Time Stamp file
 
 for in_file in os.listdir(os.curdir):
 
     if not os.path.isdir(in_file) and in_file.__contains__("records"):
 
         read_file = open(os.curdir + "/" + in_file, 'r')
-        read_ts_file = open(os.curdir + "/" + "1_60_ts", 'r')
+        read_ts_file = open(os.curdir + "/" + args.ts_file, 'r')
 
         in_records = read_file.readlines()
         in_ts_records = read_ts_file.readlines()
@@ -35,7 +41,7 @@ for in_file in os.listdir(os.curdir):
 
                 result_final.append(str(unix_ts_converted) + " --- " + record)
 
-        out = open(os.curdir + "/" + "1_60_time_stamps" , 'w')
+        out = open(os.curdir + "/" + args.ts_file + "_time_stamps" , 'w')
 
         for record in result_final:
 

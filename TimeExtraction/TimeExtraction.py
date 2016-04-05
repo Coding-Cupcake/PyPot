@@ -1,6 +1,12 @@
 import os
+import argparse
 
-BUCKETS = 20
+# Parse command line arguments
+parser = argparse.ArgumentParser()
+parser.add_argument("buckets", help="Enter number of buckets")
+args = parser.parse_args()
+
+BUCKETS = int(args.buckets)
 
 for in_file in os.listdir(os.curdir):
 
@@ -19,7 +25,7 @@ for in_file in os.listdir(os.curdir):
         while index < BUCKETS:
 
             #out_array.append("BUCKET " + str(index) + " : " + in_array[index*steps] + "  -  " + in_array[(second_index*steps)-1])
-            result_filtered.append(in_array[index*steps])
+            #result_filtered.append(in_array[index*steps])
             result_filtered.append(in_array[(second_index*steps)-1])
 
             index += 1
